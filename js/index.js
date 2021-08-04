@@ -79,3 +79,8 @@ const array8_all_alt2 = array8_String_alt2.concat(array8_Number_alt2); // Бли
 //-9-
 const array9 = [1,'a',2,'b',3,'c'];
 array9.join(' или ');
+
+//-10-
+const array10 = [4,9,16,25,36,49,64,81,100,121,144,169,196,225];
+const array10_sqrt = array10.map(Math.sqrt)
+console.log(array10_sqrt);
