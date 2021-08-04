@@ -11,3 +11,8 @@ function sayType(value) {
     }
 }
 
+//-2-
+function randNum() {
+    return Math.floor(Math.random()*(100-0+1));
+}
+
