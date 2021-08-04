@@ -75,3 +75,7 @@ array8_String_alt1.push(6,7,8,9,10);// push в массив просто нов�
 const array8_String_alt2 = ['a','b','c','d','e'];
 const array8_Number_alt2 = [6,7,8,9,10];
 const array8_all_alt2 = array8_String_alt2.concat(array8_Number_alt2); // Ближе похоже к правде?Лучше обьеденить переменные)))
+
+//-9-
+const array9 = [1,'a',2,'b',3,'c'];
+array9.join(' или ');
