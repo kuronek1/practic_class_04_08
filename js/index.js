@@ -42,8 +42,6 @@ for (let i = 0; i < array5.length; i++) {
        delete array5[i]
     }
 };
-
-
  
 //-6-
 const array6 = [1,2,3,4,5]
@@ -51,3 +49,14 @@ const array6 = [1,2,3,4,5]
 for (let i = 5; i < 10; i++) {
     array6[i] = i+1
 }
+
+//-7*-
+const array7 = []
+
+for (let i = 0; i < 5; i++) {
+    array7[i] = 'user'+(i+1)
+};
+ 
+const array7_filter = array7.filter(function(value) {
+    return value[4] <= "1" || value[4] >= "5"
+});
