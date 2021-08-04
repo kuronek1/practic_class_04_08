@@ -16,3 +16,12 @@ function randNum() {
     return Math.floor(Math.random()*(100-0+1));
 }
 
+//-3-
+let num = 1
+function addStars() {
+    for (let i = 0; i < 7; i++) {
+        num += '*'
+    }
+    return num;
+}
+
