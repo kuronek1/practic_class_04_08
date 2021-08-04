@@ -60,3 +60,18 @@ for (let i = 0; i < 5; i++) {
 const array7_filter = array7.filter(function(value) {
     return value[4] <= "1" || value[4] >= "5"
 });
+
+//-8-
+const array8_String = ['a','b','c','d','e'];
+const array8_Number = [6,7,8,9,10];
+const array8_all = array8_String.push(array8_Number);// масиив в массиве(не уверен что должно быть так)(Но по идеи задача ведь добавить массив в конец другого массива)
+
+
+//alternative1
+const array8_String_alt1 = ['a','b','c','d','e'];
+array8_String_alt1.push(6,7,8,9,10);// push в массив просто новых переменных(не уверен что должно быть так)
+
+//alternative2
+const array8_String_alt2 = ['a','b','c','d','e'];
+const array8_Number_alt2 = [6,7,8,9,10];
+const array8_all_alt2 = array8_String_alt2.concat(array8_Number_alt2); // Ближе похоже к правде?Лучше обьеденить переменные)))
