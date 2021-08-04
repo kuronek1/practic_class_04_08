@@ -83,4 +83,3 @@ array9.join(' или ');
 //-10-
 const array10 = [4,9,16,25,36,49,64,81,100,121,144,169,196,225];
 const array10_sqrt = array10.map(Math.sqrt)
-console.log(array10_sqrt);
