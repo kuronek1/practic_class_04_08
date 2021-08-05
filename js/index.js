@@ -82,4 +82,20 @@ array9.join(' или ');
 
 //-10-
 const array10 = [4,9,16,25,36,49,64,81,100,121,144,169,196,225];
-const array10_sqrt = array10.map(Math.sqrt)
+const array10_sqrt = array10.map(Math.sqrt);
+
+//-11-
+const array11 = [];
+
+for (let i = 0; i < 15; i++) {
+    array11.push(Math.round(Math.random()*30))
+};
+
+function getIndex() {
+    for (let i = 0; i < array11.length; i++) {
+        if(array11[`${i}`] > 10 && array11[`${i}`] < 20) {
+            return array11.indexOf(array11[i])
+        }        
+    }
+};
+getIndex();
