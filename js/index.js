@@ -136,3 +136,6 @@ JSON.parse(str14);
 const obj15 = { constSercetPassCode: "RAMESES" };
 
 Object.freeze(obj15);
+
+//-16-
+const obj16 = JSON.parse(JSON.stringify(obj15));;
