@@ -127,3 +127,9 @@ const obj13 = {
 }
 
 JSON.stringify(obj13);
+
+//-14-
+
+const str14 = '{ "users": [ { "firstname": "Elena", "lastname": "Vaenga" }, { "firstname": "Pavlo", "lastname": "Zibrov" } ] }';
+
+JSON.parse(str14);
