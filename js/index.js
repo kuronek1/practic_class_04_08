@@ -1,4 +1,4 @@
-//-1-
+//-1- 
 function sayType(value) {
     if (typeof value == "number") {
        return "Это число";
@@ -84,18 +84,6 @@ array9.join(' или ');
 const array10 = [4,9,16,25,36,49,64,81,100,121,144,169,196,225];
 const array10_sqrt = array10.map(Math.sqrt);
 
-/* 
-12. *массив строк отфильтровать, чтобы остались только строки содержащие в себе букву "o" И букву "р"
-
-13. обьект { login: "ffoee", pass: "123Test" } перевести в строку (JSON.stringify)
-
-14. строку "{ "users": [ { "firstname": "Elena", "lastname": "Vaenga" }, { "firstname": "Pavlo", "lastname": "Zibrov" } ] }" перевести в обьект (JSON.parse)
-
-15. заморозить обьект { constSercetPassCode: "RAMESES" }, проверить заморозку
-
-16. "разморозить" предыдущий обьект создав его клон.
-
-17.* получить массив имен свойств у обьекта, с помощью цикла по массиву имен свойств вывести значения этих свойств в консоль */
 
 //-11-
 const array11 = [];
@@ -119,17 +107,23 @@ const array12_filter = []
 
 function getLetter() {
     for (let i = 0; i < array12.length; i++) { //цикл прохода по буквам
-        if(array12[i].includes('Р') === true || array12[i].includes('Р') === true || array12[i].includes('р') === true || array12[i].includes('О') === true || array12[i].includes('о') === true){// поиск нужной буквы
-        }// неправильный вывод
+        if(array12[i].toLowerCase().includes('р') === true || array12[i].toLowerCase().includes('о') === true){// поиск нужной буквы
+            array12_filter.push(array12[i])
+        }
         else {
             continue
         }
-        array12_filter.push(array12[i])
     }
 
 }
 getLetter();
 
 
+//-13- 
 
-/* array12[i].includes('Р') === true && array12[i].includes('р') === true && array12[i].includes('О') === true && array12[i].includes('о') === true  */
+const obj13 = {
+    login: 'ffoee',
+    pass: '123Test',
+}
+
+JSON.stringify(obj13);
