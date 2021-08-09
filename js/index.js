@@ -120,7 +120,6 @@ getLetter();
 
 
 //-13- 
-
 const obj13 = {
     login: 'ffoee',
     pass: '123Test',
@@ -129,7 +128,11 @@ const obj13 = {
 JSON.stringify(obj13);
 
 //-14-
-
 const str14 = '{ "users": [ { "firstname": "Elena", "lastname": "Vaenga" }, { "firstname": "Pavlo", "lastname": "Zibrov" } ] }';
 
 JSON.parse(str14);
+
+//-15-
+const obj15 = { constSercetPassCode: "RAMESES" };
+
+Object.freeze(obj15);
