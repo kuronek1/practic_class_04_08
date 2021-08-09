@@ -138,4 +138,22 @@ const obj15 = { constSercetPassCode: "RAMESES" };
 Object.freeze(obj15);
 
 //-16-
-const obj16 = JSON.parse(JSON.stringify(obj15));;
+const obj16 = JSON.parse(JSON.stringify(obj15));
+
+//-17*-
+const obj17 = {
+    name: 'Didi',
+    id: 15,
+    age: 17,
+    status: 'student',
+    work: 'barista'
+};
+
+const array17_keys = Object.keys(obj17);
+
+function values() {
+    for (const key of array17_keys) {
+        console.log(obj17[key]);
+    }
+}
+values();
